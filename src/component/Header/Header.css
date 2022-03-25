@@ -1,10 +1,16 @@
+.header {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
 .header h1 {
     font-size: 72px;
     background: linear-gradient(to right, #4564FF, #FF5C87);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
   }
 

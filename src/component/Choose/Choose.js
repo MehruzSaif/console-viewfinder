@@ -12,6 +12,10 @@ const Choose = () => {
             .then(data => setKeyboards(data))
     }, []);
 
+    const handleAddToSelected = (keyboard) => {
+        console.log(keyboard);
+    }
+
     return (
         <div className='choose-container'>
             <div className="keyboards-container">
@@ -19,6 +23,7 @@ const Choose = () => {
                     keyboards.map(keyboard => <Keyboard
                         key={keyboard.id}
                         keyboard={keyboard}
+                        handleAddToSelected={handleAddToSelected}
                     ></Keyboard>)
                 }
             </div>

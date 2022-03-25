@@ -2,7 +2,11 @@ import React from 'react';
 import './Keyboard.css';
 
 const Keyboard = (props) => {
+    const { handleAddToSelected, keyboard } = props;
+
     const { img, name, price } = props.keyboard;
+
+    // console.log(props);
 
     return (
         <div className='keyboard'>
@@ -13,7 +17,7 @@ const Keyboard = (props) => {
                 <p className='keyboard-price'>Price: ${price}</p>
             </div>
 
-            <button className='btn-cart'>
+            <button onClick={() => props.handleAddToSelected(props.keyboard)} className='btn-cart'>
                 <p>Add To Cart</p>
             </button>
         </div>
