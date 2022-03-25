@@ -48,6 +48,13 @@
     position: absolute;
     bottom: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cart .btn-text {
+    margin-right: 12px;
 }
 
 .btn-cart:hover {

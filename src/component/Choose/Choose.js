@@ -6,6 +6,8 @@ import './Choose.css';
 const Choose = () => {
     const [keyboards, setKeyboards] = useState([]);
 
+    const [selected, setSelected] = useState([]);
+
     useEffect(() => {
         fetch('keyboards.json')
             .then(res => res.json())
@@ -13,7 +15,9 @@ const Choose = () => {
     }, []);
 
     const handleAddToSelected = (keyboard) => {
-        console.log(keyboard);
+        // console.log(keyboard);
+        const newSelected = [...selected, keyboard];
+        setSelected(newSelected);
     }
 
     return (
@@ -30,6 +34,7 @@ const Choose = () => {
 
             <div className="cart-container">
                 <h3>Selected Keyboard</h3>
+                <p>Selected Items: {selected.length}</p>
             </div>
         </div>
     );
