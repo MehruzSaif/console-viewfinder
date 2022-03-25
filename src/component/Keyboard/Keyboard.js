@@ -1,9 +1,13 @@
 import React from 'react';
+import './Keyboard.css';
 
-const Keyboard = () => {
+const Keyboard = (props) => {
+    const { img, name, price } = props.keyboard;
+
     return (
-        <div>
-            <h2>This is keyboard.</h2>
+        <div className='keyboard'>
+            <img src={img} alt="" />
+            <p className='keyboard-name'>{name}</p>
         </div>
     );
 };

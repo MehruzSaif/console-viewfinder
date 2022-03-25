@@ -1,4 +1,6 @@
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import React, { useEffect, useState } from 'react';
+import Keyboard from '../Keyboard/Keyboard';
 import './Choose.css';
 
 const Choose = () => {
@@ -13,7 +15,12 @@ const Choose = () => {
     return (
         <div className='choose-container'>
             <div className="keyboards-container">
-                <h2>This is for products: {keyboards.length}</h2>
+                {
+                    keyboards.map(keyboard => <Keyboard
+                        key={keyboard.id}
+                        keyboard={keyboard}
+                    ></Keyboard>)
+                }
             </div>
 
             <div className="cart-container">

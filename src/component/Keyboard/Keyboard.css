@@ -1,0 +1,17 @@
+.keyboard {
+    width: 300px;
+    height: 510px;
+}
+
+.keyboard img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.keyboard-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
