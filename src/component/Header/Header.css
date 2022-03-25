@@ -1,7 +1,7 @@
 .header h1 {
     font-size: 72px;
-    background: -webkit-linear-gradient(#4564FF, #FF5C87);
-    -webkit-background-clip: text;
+    background: linear-gradient(to right, #4564FF, #FF5C87);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;
     margin-top: 10px;
@@ -10,8 +10,8 @@
 
 .header h2 {
     font-size: 45px;
-    background: -webkit-linear-gradient(#3609b4, #0cbfc5);
-    -webkit-background-clip: text;
+    background: linear-gradient(to right, #3437cc, #23dff0);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 5px;
     text-align: center;
