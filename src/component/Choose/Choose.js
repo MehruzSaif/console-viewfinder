@@ -28,7 +28,7 @@ const Choose = () => {
     }
 
     return (
-        <div className='choose-container'>
+        <div className='choose-container container'>
             <div className="keyboards-container">
                 {
                     keyboards.map(keyboard => <Keyboard

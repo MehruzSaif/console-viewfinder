@@ -17,9 +17,9 @@ const Keyboard = ({ handleAddToSelected, keyboard }) => {
                 <p className='keyboard-price'>Price: ${price}</p>
             </div>
 
-            <button onClick={() => handleAddToSelected(keyboard)} className='btn-cart'>
+            <button onClick={() => handleAddToSelected(keyboard)} className='btn-cart d-flex justify-content-center'>
                 <p className='btn-text'>Add To Cart</p>
-                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+                <FontAwesomeIcon className='icon' icon={faShoppingCart}></FontAwesomeIcon>
             </button>
         </div>
     );

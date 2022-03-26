@@ -8,8 +8,8 @@ const Cart = ({ selected }) => {
 
         if (keyboard.length) {
             const randomKeyboard = Math.round(Math.random() * (keyboard.length - 1));
-            console.log(randomKeyboard);
-            const text = keyboard[randomKeyboard].name + "Recommended for you";
+            // console.log(randomKeyboard);
+            const text = keyboard[randomKeyboard].name + " recommended for you";
             alert(text);
         }
         else {
@@ -21,11 +21,11 @@ const Cart = ({ selected }) => {
     return (
         <div className='cart'>
 
-            <h3 className='selected-h3'>Selected Keyboard</h3>
+            <h5 className='selected-h3'>Selected Keyboard</h5>
             {
-                selected.map(keyboard => <h3 key={keyboard.id}>
+                selected.map(keyboard => <h5 key={keyboard.id}>
                     {keyboard.name}
-                </h3>)
+                </h5>)
             }
             <button onClick={() => selectOne(selected)} className='btn-cart1'>Choose 1 For Me</button>
             <br />
