@@ -1,8 +1,9 @@
 import React from 'react';
+import './Questions.css';
 
 const Questions = () => {
     return (
-        <div className='container'>
+        <div className='container question my-5'>
             <h2 className="text-center fw-bold my-5 faq">Frequently Asked Questions</h2>
 
             <div id="accordionExample">
