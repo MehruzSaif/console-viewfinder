@@ -1,35 +1,67 @@
 import { keyboard } from '@testing-library/user-event/dist/keyboard';
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 
 const Cart = ({ selected }) => {
 
-    const selectOne = keyboard => {
+    const [selectedKeyboard, setSelectedKeyboard] = useState([]);
+    const totalKeyboard = selected.length;
+    let total = 0;
 
-        if (keyboard.length) {
-            const randomKeyboard = Math.round(Math.random() * (keyboard.length - 1));
-            // console.log(randomKeyboard);
-            const text = keyboard[randomKeyboard].name + " recommended for you";
-            alert(text);
-        }
-        else {
-            alert("❌ Select at least one keyboard.");
-        }
+    for (const keyboard of selected) {
+        total = total + keyboard.price;
     }
+
+    const handleChooseBtn = () => {
+        const getRandomInt = (max) => {
+            return Math.floor(Math.random() * max);
+        };
+        const selectedKeyboardIndex = getRandomInt(selected.length);
+        setSelectedKeyboard(selected[selectedKeyboardIndex]);
+        console.log(selectedKeyboard);
+    };
+    const handleRechooseBtn = () => {
+        window.location.reload();
+    };
+
+
+
+    /*  const selectOne = keyboard => {
+ 
+         if (keyboard.length) {
+             const randomKeyboard = Math.round(Math.random() * (keyboard.length - 1));
+             // console.log(randomKeyboard);
+             const text = keyboard[randomKeyboard].name + " recommended for you";
+             alert(text);
+         }
+         else {
+             alert("❌ Select at least one keyboard.");
+         }
+     } */
 
 
     return (
         <div className='cart'>
 
             <h5 className='selected-h3'>Selected Keyboard</h5>
-            {
-                selected.map(keyboard => <h5 key={keyboard.id}>
-                    {keyboard.name}
-                </h5>)
-            }
-            <button onClick={() => selectOne(selected)} className='btn-cart1'>Choose 1 For Me</button>
+            <div className='selected-name'>
+                <p>Total Keyboards: {totalKeyboard}</p>
+                {
+                    selected.map((keyboard) => <h5 key={keyboard.id}>
+                        {keyboard.name}
+                    </h5>)
+                }
+            </div>
+
+            <button onClick={handleChooseBtn} className='btn-cart1'>Choose 1 For Me</button>
+            {selectedKeyboard.id && (
+                <div>
+                    <img className="custom-cart-img" src={selectedKeyboard.img} alt="" />
+                    <p>{selectedKeyboard.name}</p>
+                </div>
+            )}
             <br />
-            <button className='btn-cart2'>Choose Again</button>
+            <button onClick={handleRechooseBtn} className='btn-cart2'>Choose Again</button>
         </div>
     );
 };

@@ -20,7 +20,7 @@ const Choose = () => {
         const newSelected = [...selected, keyboard];
 
         if (newSelected.length > 4) {
-            alert('You can select only 4 keyboards.')
+            alert('❌ You can select only 4 keyboards.')
         }
         else {
             setSelected(newSelected);
