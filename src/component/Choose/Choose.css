@@ -16,8 +16,17 @@
     border-radius: 8px;
 }
 
-@media screen and (max-width: 1100px) {
-    .keyboards-container {
-        grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 688px) {
+    .choose-container {
+        grid-template-columns: 1fr;
+    }
+    .keyboards-container{
+        grid-template-columns: 1fr;
+    }
+    .selected-container {
+        margin: 0 auto;
+        display: block;
+        margin-left: -10px;
     }
 }
+
