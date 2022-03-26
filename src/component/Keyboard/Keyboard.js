@@ -8,8 +8,6 @@ const Keyboard = ({ handleAddToSelected, keyboard }) => {
 
     const { img, name, price } = keyboard;
 
-    // console.log(props);
-
     return (
         <div className='keyboard'>
             <img src={img} alt="" />

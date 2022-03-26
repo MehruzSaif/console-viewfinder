@@ -18,7 +18,13 @@ const Choose = () => {
     const handleAddToSelected = (keyboard) => {
         // console.log(keyboard);
         const newSelected = [...selected, keyboard];
-        setSelected(newSelected);
+
+        if (newSelected.length > 4) {
+            alert('You can select only 4 keyboards.')
+        }
+        else {
+            setSelected(newSelected);
+        }
     }
 
     return (

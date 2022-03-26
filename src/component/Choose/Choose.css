@@ -7,11 +7,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
-    margin: 50px 50px;
+    margin: 80px 50px;
 }
 
 .selected-container {
     background-color: rgb(221, 213, 213);
+    margin-top: 85px;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 1100px) {
