@@ -29,7 +29,7 @@
 }
 
 .selected-h3 {
-    background: linear-gradient(to right, #4564FF, #FF5C87);
+    background: linear-gradient(to right, #006F3E, #B7F21B);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;

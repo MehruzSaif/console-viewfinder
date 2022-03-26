@@ -4,6 +4,19 @@ import './Cart.css';
 
 const Cart = ({ selected }) => {
 
+    const selectOne = keyboard => {
+
+        if (keyboard.length) {
+            const randomKeyboard = Math.round(Math.random() * (keyboard.length - 1));
+            console.log(randomKeyboard);
+            const text = keyboard[randomKeyboard].name + "Recommended for you";
+            alert(text);
+        }
+        else {
+            alert("❌ Select at least one keyboard.");
+        }
+    }
+
 
     return (
         <div className='cart'>
@@ -14,7 +27,7 @@ const Cart = ({ selected }) => {
                     {keyboard.name}
                 </h3>)
             }
-            <button className='btn-cart1'>Choose 1 For Me</button>
+            <button onClick={() => selectOne(selected)} className='btn-cart1'>Choose 1 For Me</button>
             <br />
             <button className='btn-cart2'>Choose Again</button>
         </div>
