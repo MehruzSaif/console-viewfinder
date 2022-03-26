@@ -35,13 +35,26 @@
     font-size: 30px;
 }
 
-.cart h5 {
+.cart-keyboard {
     background-color: white;
     padding: 10px 40px;
     margin-bottom: 10px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .custom-cart-img {
     width: 100%;
+}
+.custom-cart-img1{
+    width: 100px;
+    height: 100px;
+}
+
+.cart-text {
+    margin-bottom: 0px;
+    margin-left: 12px;
+    font-size: 13px;
+    font-weight: 700;
 }

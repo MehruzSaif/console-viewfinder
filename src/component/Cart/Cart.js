@@ -47,9 +47,10 @@ const Cart = ({ selected }) => {
             <div className='selected-name'>
                 <p>Total Keyboards: {totalKeyboard}</p>
                 {
-                    selected.map((keyboard) => <h5 key={keyboard.id}>
-                        {keyboard.name}
-                    </h5>)
+                    selected.map((keyboard) => <div className='cart-keyboard' key={keyboard.id}>
+                        <img className='custom-cart-img1' src={keyboard.img} alt="" />
+                        <p className='cart-text'>{keyboard.name}</p>
+                    </div>)
                 }
             </div>
 
@@ -57,7 +58,7 @@ const Cart = ({ selected }) => {
             {selectedKeyboard.id && (
                 <div>
                     <img className="custom-cart-img" src={selectedKeyboard.img} alt="" />
-                    <p>{selectedKeyboard.name}</p>
+                    <p><b>{selectedKeyboard.name}</b></p>
                 </div>
             )}
             <br />
