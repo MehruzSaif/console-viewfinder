@@ -1,5 +1,6 @@
 import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Keyboard from '../Keyboard/Keyboard';
 import './Choose.css';
 
@@ -32,9 +33,8 @@ const Choose = () => {
                 }
             </div>
 
-            <div className="cart-container">
-                <h3>Selected Keyboard</h3>
-                <p>Selected Items: {selected.length}</p>
+            <div className="selected-container">
+                <Cart selected={selected}></Cart>
             </div>
         </div>
     );
