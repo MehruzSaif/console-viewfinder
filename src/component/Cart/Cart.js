@@ -58,7 +58,7 @@ const Cart = ({ selected }) => {
             {selectedKeyboard.id && (
                 <div>
                     <img className="custom-cart-img" src={selectedKeyboard.img} alt="" />
-                    <p><b>{selectedKeyboard.name}</b></p>
+                    <p className='choosedOneKeyboardText'><b>{selectedKeyboard.name}</b></p>
                 </div>
             )}
             <br />

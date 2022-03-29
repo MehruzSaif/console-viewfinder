@@ -19,6 +19,7 @@
     color: white;
     font-size: 17px;
     border-radius: 15px;
+    align-items: center;    
 }
 
 .btn-cart2 {
@@ -46,10 +47,12 @@
 
 .custom-cart-img {
     width: 100%;
+    border-radius: 8px;
 }
 .custom-cart-img1{
     width: 100px;
     height: 100px;
+    border-radius: 8px;
 }
 
 .cart-text {
@@ -58,3 +61,10 @@
     font-size: 13px;
     font-weight: 700;
 }
+
+.choosedOneKeyboardText {
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
