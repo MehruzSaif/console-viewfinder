@@ -26,18 +26,18 @@ const Cart = ({ selected }) => {
 
 
 
-    /*  const selectOne = keyboard => {
+    /* const selectOne = keyboard => {
  
-         if (keyboard.length) {
-             const randomKeyboard = Math.round(Math.random() * (keyboard.length - 1));
-             // console.log(randomKeyboard);
-             const text = keyboard[randomKeyboard].name + " recommended for you";
-             alert(text);
-         }
-         else {
-             alert("❌ Select at least one keyboard.");
-         }
-     } */
+        if (keyboard.length) {
+            const randomKeyboard = Math.round(Math.random() * (keyboard.length - 1));
+            // console.log(randomKeyboard);
+            const text = keyboard[randomKeyboard].name + " recommended for you";
+            alert(text);
+        }
+        else {
+            alert("❌ Select at least one keyboard.");
+        }
+    } */
 
 
     return (
