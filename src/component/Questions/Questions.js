@@ -15,9 +15,9 @@ const Questions = () => {
                             রিএক্ট কিভাবে কাজ করে?
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body fs-5 fw-light">
+                        <div className="accordion-body fs-5 fw-light">
                             <strong>রিএক্ট এর গুণ হল এর সিম্প্লিসিটি। এটি মূল জাভাস্ক্রিপ্টের পাশাপাশি JSX নামে একটি বিশেষ সিনট্যাক্স ব্যবহার করে যা আমাদের জাভাস্ক্রিপ্টের ভিতরে 100% HTML লিখতে দেয়। এখন ব্রাউজার বিহ্যাইন্ড দ্যা সীনে একটা ডম ট্রি তৈরি করে যাতে ব্যবহারকারী সেই ডম ট্রি এর সাথে যোগাযোগ করতে পারে। তারপর আমাদের সামনে একটি ওয়েবপেজ উপস্থিত হয়। কিন্তু আমরা জানি যে জাভাস্ক্রিপ্ট DOM ম্যানিপুলেট করতে পারে। সুতরাং জাভাস্ক্রিপ্ট দিয়ে রেন্ডার কমপ্লিট হওয়া কোন পেজের ডম ম্যানিপুলেট করলে সেই ওয়েবপেজ আবার পুরোপুরি রেন্ডার হয়(দুই একটা লেটেস্ট ব্রাউজার ছাড়া বাকী বেশীরভাগ ব্রাউজারই পুরোপুরি নতুন করে আবার ডম ট্রি তৈরী করে রেন্ডার করে) যেটা সময় সাপেক্ষ। আর তাই একটা পেজে ডম ম্যানিপুলেট করার মতো ততো বেশী জাভাস্ক্রিপ্ট থাকলে সেই ওয়েবপেজ স্লো হয়ে যাবে। তাই এখানেই রিঅ্যাক্ট এর আসল খেলা।</strong>
                         </div>
                     </div>
@@ -32,9 +32,9 @@ const Questions = () => {
                             স্টেট ও প্রপস এর মধ্যে পার্থক্য কি?
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body fs-5 fw-light">
+                        <div className="accordion-body fs-5 fw-light">
                             <strong><b>স্টেট:</b> <br></br> <br></br>
                                 i. স্টেট হচ্ছে মিউটেবল ।<br></br>
 
@@ -64,9 +64,9 @@ const Questions = () => {
                             ইউজস্টেট কিভাবে কাজ করে?
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body fs-5 fw-light">
+                        <div className="accordion-body fs-5 fw-light">
                             <strong>এটি হল একটি হুক (ফাংশন) যা আপনাকে কার্যকরী উপাদানগুলিতে স্টেট ভেরিয়েবল রাখতে দেয়। আপনি এই ফাংশনে প্রাথমিক অবস্থা পাস করেন এবং এটি বর্তমান অবস্থার মান (প্রাথমিক অবস্থা নয়) সহ একটি পরিবর্তনশীল প্রদান করে এবং এই মানটি আপডেট করার জন্য অন্য একটি ফাংশন প্রদান করে।</strong>
                         </div>
                     </div>

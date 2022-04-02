@@ -20,13 +20,14 @@
     .choose-container {
         grid-template-columns: 1fr;
     }
-    .keyboards-container{
+
+    .keyboards-container {
         grid-template-columns: 1fr;
     }
+
     .selected-container {
         margin: 0 auto;
         display: block;
         margin-left: -10px;
     }
 }
-
